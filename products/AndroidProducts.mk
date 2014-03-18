@@ -30,6 +30,9 @@ endif
 ifeq (pa_dlx,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_dlx.mk
 endif
+ifeq (pa_fascinatemtd,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_fascinatemtd.mk
+endif
 ifeq (pa_galaxysmtd,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_galaxysmtd.mk
 endif

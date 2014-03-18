@@ -14,7 +14,7 @@
 
 # Check for target product
 
-ifeq (pa_galaxysmtd,$(TARGET_PRODUCT))
+ifeq (pa_fascinatemtd,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
 OVERLAY_TARGET := pa_hdpi
@@ -31,11 +31,11 @@ include vendor/pa/main.mk
 $(call inherit-product, device/samsung/fascinatemtd/full_fascinatemtd.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := pa_galaxysmtd
-PRODUCT_DEVICE := galaxysmtd
+PRODUCT_NAME := pa_fascinatemtd
+PRODUCT_DEVICE := fascinatemtd
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := GT-I9000
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=GT-I9000 TARGET_DEVICE=GT-I9000 BUILD_FINGERPRINT=samsung/GT-I9000/GT-I9000:2.3.5/GINGERBREAD/XXJVT:user/release-keys PRIVATE_BUILD_DESC="GT-I9000-user 2.3.5 GINGERBREAD XXJVT release-keys"
+PRODUCT_MODEL := SCH-I500
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SCH-I500 TARGET_DEVICE=SCH-I500 BUILD_FINGERPRINT=verizon/SCH-I500/SCH-I500:2.3.5/GINGERBREAD/EI20:user/release-keys PRIVATE_BUILD_DESC="SCH-I500-user 2.3.5 GINGERBREAD EI20 release-keys"
 
 endif
